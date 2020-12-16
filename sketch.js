@@ -13,7 +13,7 @@ bullet=createSprite(200,100)
 bullet.shapeColor="white"
 
 wall=createSprite(1200, 200, thickness, height/2)
-waqll.shapeColor=color(80,80,80)
+wall.shapeColor=color(80,80,80)
 
 
 }
@@ -22,7 +22,7 @@ waqll.shapeColor=color(80,80,80)
 function draw() {
   background(0);
 
-  if(hasCollided(bulllet,wall))
+  if(hasCollided(bullet,wall))
   {
 	  bullet.velocityX=0; 
 	  var damage=0.5 * weight * speed * speed/(thickness *thickness* thickness);
